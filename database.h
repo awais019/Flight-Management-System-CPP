@@ -18,10 +18,10 @@ private:
     std::vector<Flight *> flights;
     std::vector<Flight *> bookedFlights;
 
-    fs::path usersFile = fs::path("C:/Users/Lenovo/Desktop/Flight Management System/src/Data/Users");
-    fs::path flightsFile = fs::path("C:/Users/Lenovo/Desktop/Flight Management System/src/Data/Flights");
-    fs::path bookedFlightsFile = fs::path("C:/Users/Lenovo/Desktop/Flight Management System/src/Data/Booked Flights");
-    fs::path folder = fs::path("C:/Users/Lenovo/Desktop/Flight Management System/src/Data");
+    fs::path usersFile = fs::path("./data/users.txt");
+    fs::path flightsFile = fs::path("data/flights.txt");
+    fs::path bookedFlightsFile = fs::path("./data/bookedFlights.txt");
+    fs::path folder = fs::path("./data");
 
 public:
     DataBase()
