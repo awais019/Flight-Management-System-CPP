@@ -16,9 +16,19 @@ private:
     double flightPrice;
 
 public:
+    Flight() {}
     Flight(const string &flightName, const string &date, const string &departureTime,
            const string &departureLocation, const string &reachingTime, const string &reachingLocation,
-           double flightPrice);
+           double flightPrice)
+    {
+        this->flightName = flightName;
+        this->date = date;
+        this->departureTime = departureTime;
+        this->departureLocation = departureLocation;
+        this->reachingTime = reachingTime;
+        this->reachingLocation = reachingLocation;
+        this->flightPrice = flightPrice;
+    }
 
     string getFlightName()
     {

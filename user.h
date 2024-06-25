@@ -35,11 +35,10 @@ public:
     }
 
     void viewFlights(DataBase &dataBase, User &user) {
-
     };
     void searchFlight(DataBase &dataBase, User &user) {};
     std::string toString() {};
-    void menu(DataBase &dataBase, User &user) {};
+    virtual void menu(DataBase &dataBase, User &user) {};
 };
 
 #endif // USER_H
